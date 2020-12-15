@@ -1,7 +1,7 @@
 var http = require('http');
 var fs = require('fs');
 
-const PORT=8080; 
+const port = process.env.PORT || 3000;
 
 fs.readFile('./home.html', function (err, html) {
 
@@ -11,5 +11,5 @@ fs.readFile('./home.html', function (err, html) {
         response.writeHeader(200, {"Content-Type": "text/html"});  
         response.write(html);  
         response.end();  
-    }).listen(PORT || 5000);
+    }).listen(port);
 });
