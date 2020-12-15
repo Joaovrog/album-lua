@@ -11,5 +11,5 @@ fs.readFile('./home.html', function (err, html) {
         response.writeHeader(200, {"Content-Type": "text/html"});  
         response.write(html);  
         response.end();  
-    }).listen(PORT);
+    }).listen(PORT || 5000);
 });
