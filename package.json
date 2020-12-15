@@ -1,0 +1,6 @@
+{
+    "scripts": {
+        "start": "node index.js",
+        "test": "echo \"Error: sem testes\" && exit 1"
+    }
+}
